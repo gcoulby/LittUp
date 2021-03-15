@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <title>LittUp</title>
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/styles.css">
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="https://code.highcharts.com/highcharts.js"></script>
+<script src="https://code.highcharts.com/modules/exporting.js"></script>
+<script src="https://code.highcharts.com/modules/export-data.js"></script>
+</head>
+
+<body>
+    <div id="header" style="background-color: #ffffff;padding: 1em 2em;">
+        <div class="container">
+            <div class="row">
+                <div class="col-6"><a class="navbar-brand" href="#" style="color: rgb(254,0,0);margin-right: 0;font-weight: bold;">LITT&nbsp;</a><a class="navbar-brand" href="#" style="color: rgb(0,0,0);font-weight: bold;">UP</a></div>
+                <div class="col-6">
+                    <p class="text-left" id="file_name" style="font-weight: bold;margin: 8px;">No File Loaded!</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div style="margin-top: 0.3em;">
+            <ul class="nav nav-tabs">
+                <li class="nav-item"><a class="nav-link active" role="tab" data-toggle="tab" id="upload-link" href="#tab-1">File Upload</a></li>
+                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" id="journal-link" href="#tab-2">Journals</a></li>
+                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-5">Publisher</a></li>
+                <li class="nav-item"><a class="nav-link" role="tab" data-toggle="tab" href="#tab-3">Year</a></li>
+            </ul>
+            <div class="tab-content">
+                <div class="tab-pane active" role="tabpanel" id="tab-1">
+                    <p style="margin: 2em;">Upload your library in BibTex file format by dragging the file into the box below.</p>
+                    <div id="drop_zone" style="margin: 2em;">
+                        <p>DROP BIBTEX FILE&nbsp;HERE</p>
+                    </div>
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <h3>Export Instructions</h3>
+                                <p style="margin-bottom: 0;">To export a BibTex file from <strong>EndNote </strong>follow the folowing instructions:</p><a href="https://libguides.usask.ca/c.php?g=218034&amp;p=1458583">https://libguides.usask.ca/c.php?g=218034&amp;p=1458583</a>
+                                <p
+                                    style="margin-top: 2em;margin-bottom: 0;">To export a BibTex file from <strong>Mendeley</strong> follow the folowing instructions:</p><a href="https://libguides.usask.ca/c.php?g=218034&amp;p=1446316">https://libguides.usask.ca/c.php?g=218034&amp;p=1446316</a></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-2">
+                    <div id="journal-container" class="graph-container"></div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-5">
+                    <div id="publisher-container" class="graph-container"></div>
+                </div>
+                <div class="tab-pane" role="tabpanel" id="tab-3">
+                    <div id="year-container" class="graph-container"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/bootstrap/js/bootstrap.min.js"></script>
+    <script src="assets/js/2-columns-media-image-video-carousel-map.js"></script>
+    <script src="assets/js/bibtexParse.js"></script>
+    <script src="assets/js/custom_chart.js"></script>
+    <script src="assets/js/scripts.js"></script>
+</body>
+
+</html>

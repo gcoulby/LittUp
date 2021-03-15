@@ -1,0 +1,24 @@
+#myChart {
+  /*max-width: 100vw;*/
+  max-height: 90vh;
+}
+
+#chart {
+  /*width: 100vw;*/
+  /*height: 50vh;*/
+}
+
+#drop_zone {
+  -moz-border-radius: 5px;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  padding: 5em;
+  text-align: center;
+  color: #bbb;
+  border: 2px dashed #bbb;
+}
+
+.graph-container {
+  height: 80vh;
+}
+
