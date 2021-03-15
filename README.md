@@ -8,7 +8,7 @@ This is a simple JavaScript application for viewing the percentage of your libra
 
 Simply download, or clone the repository and open the index.html in the browser. 
 
-You can also view the app at: 
+You can also view the app at: https://gcoulby.github.io/LittUp/
 
 ## Usage
 
